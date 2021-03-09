@@ -1,0 +1,385 @@
+/*  */
+*{
+  box-sizing: border-box;
+}
+/* Стилі для всієї сторінки */
+body{
+  background: #e5e5e5; /* Фон */
+  font-size: 100%; /* Розмір шрифта */
+  margin: 0 auto; /* Робить блок по центрі */
+}
+
+/* Стилі для шапки  */
+.header{
+  display: flex; /* Робить цей блок на ФЛЕКСІ */
+  flex-direction: column; /* Блоки стають один під одним */
+}
+
+
+/* Стилі для верхньої шапки */
+.header-top{
+  text-align: left; /* Зміщує внутрішні елементи до лівої сторони */
+}
+
+/* Стилі для ссилок і шапці */
+.header a{
+  text-decoration: none; /* Відключається підкреслення */
+  display: block; /* Відображається як блочний елемент */
+}
+
+/* Стилі для Логотипа сайта */
+.logo {
+  color: black; /* Колір */
+  font-size: 3em; /* Розмір шрифта */
+  padding: 20px 0; /* Відступи навколо */
+  max-width: 1370px; /* Максимальна ширина */
+  width: 100%; /* 100 процентний розмір */
+  margin: 0 auto; /* Розміщення блока посередині */
+  font-family: 'Oswald', sans-serif; /* Шрифт */
+  font-weight: 300; /* Вид шрифта Лайт */
+}
+
+/* Чорний фон для меню */
+.header-bottom {
+  background: black; /* Колір */
+}
+
+/* Стилі для меню */
+.menu {
+  display: table; /* Робить елемент блочною таблицею */
+  max-width: 1370px; /* Ширина */
+  width: 100%; /* 100 процентний розмір */
+  margin: 0 auto; /* Розміщення блока посередині */
+}
+
+
+/* Стилі для всіх елементів меню */
+.menu > ul{
+  list-style: none; /* Убирає ті тупі кружечки */
+  margin: 0; /* Убирає отступи */
+  padding: 0; /* Убирає отступи */
+}
+
+/* Якийсь псевдоелемент в меню */
+.topmenu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  float: left; /* Притягування до лівої сторони */
+  position: relative; /* Вид розташуваня */
+}
+.topmenu > li > a {
+  font-family: 'Oswald', sans-serif; /* Шрифт */
+  font-weight: 400; /* Вид шрифта Регуляр */
+  font-size: 23px; /* Розмір шрифта */
+  color: white; /* Статичний колір */
+  padding: 8px 30px; /* Отступи */
+}
+
+/* Анімація при наведенні */
+.topmenu li a:hover {
+  transition: all 300ms ease; /* Час анімації */
+  background: #e5e5e5; /* Фон */
+	color: black; /* Колір */
+	box-shadow: inset 0 0 0 3px black; /* Рамка */
+}
+
+/* Стилі для блоку із блоками контенту і реклами */
+.row{
+  width: 100%; /* 100 процентний розмір */
+  max-width: 1370px; /* Максимальна ширина */
+  padding: 0px; /* Відступи в середині блоків */
+  margin: 20px auto; /* Відступи від сусідніх блоків */
+  display: flex; /* Робить цей блок на ФЛЕКСІ */
+  justify-content: center; /* Зміщення блоків до центру */
+  align-items: flex-start; /* Зміщення блоків до верху сторінки */
+}
+
+/* Стилі саме для блоків */
+.row div{
+  background: white; /* Фон */
+  color: black; /* Колір контенту (тексту) */
+
+  text-align: left; /* Зміщує внутрішні елементи до лівої сторони */
+}
+
+/* Стилі для контентного блоку */
+.content{
+  min-height: 250px;
+  max-width: 1090px; /* Максимальна ширина */
+  width: 80%; /* 100 процентний розмір */
+  font-family: 'Roboto Slab', serif; /* Шрифт */
+  margin-right: 30px; /* Відступ справа */
+}
+
+/* Стилі для назви контенту */
+.content-name{
+  font-weight: 500; /* Вид шрифта Болт */
+  text-align: center; /* Зміщення тексту до центу */
+  margin: 1px; /* Відступ знизу */
+}
+
+/* Стилі для абзацу із кнопкою */
+.download-button{
+  margin: 0; /* Отступи */
+  text-align: right; /* Зміщення контенту навраво */
+}
+
+/* Стилі для зображення завантаження */
+.download-button img{
+  padding-right: 2px; /* Відступ справа */
+}
+
+/* Стилі для ссилки в абзаці */
+.download-button a{
+  padding: 1px 5px; /* Різні отступи */
+  font-size: 110%; /* Розмір шрифта */
+  font-family: 'Oswald', sans-serif; /* Шрифт */
+  text-decoration: none; /* Відключається підкреслення */
+  color: black; /* Колір тексту */
+}
+
+/* Анімація при наведенні */
+.download-button a:hover{
+  text-decoration: underline; /* Появляється підкреслення */
+}
+
+/* Стилі під назвою контенту */
+.content-undername{
+  text-align: center; /* Зміщення тексту до центу */
+  margin: 0; /* Відступи */
+}
+
+/* Стилі для тексту контенту */
+.content-text{
+  padding: 0 10px; /* Відступи по боках */
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Стилі для меню в контенті */
+.content-menu{
+  text-align: center;
+  min-width: 250px;
+}
+.content-menu ul{
+  list-style: none;
+}
+
+
+.content-menu a{
+  text-decoration:none;
+  padding:2px 20px;
+  color:black;
+}
+.content-menu a:hover{
+  transition: all 200ms ease;
+  box-shadow: inset 0 0 0 2px black;
+}
+
+/* Стилі для сайтбара */
+.sidebar{
+  width: 19%; /* 100 процентний розмір */
+  max-width: 250px; /* Ширина */
+  min-height: 250px; /* Мінімальна висота */
+  padding: 10px;
+    font-family: 'Roboto Slab', serif; /* Шрифт */
+}
+
+Form{
+  font-family: 'Roboto Slab', serif; /* Шрифт */
+  text-align: center;
+}
+
+Form input{
+  font-family: 'Roboto Slab', serif; /* Шрифт */
+  margin: 5px auto;
+}
+Form input:hover{
+  transition: all 400ms ease; /* Час анімації */
+  border-color: black;
+}
+
+
+/* Стилі для футера */
+.footer{
+  margin: 0 auto; /* Зміщення до середини */
+  width: 100%; /* 100 процентний розмір */
+  min-height: 50px; /* Висота */
+  background: white; /* Фон */
+  text-align: center; /* Розміщення по центру */
+  font-family: 'Oswald', sans-serif; /* Шрифт */
+  font-weight: 300; /* Вид шрифта Лайт */
+}
+
+/* Стилі для інформації в футері */
+.foot-info{
+  padding-top: 10px; /* Відступ зверху */
+}
+
+
+.adminBody{
+  display: flex; /* Робить цей блок на ФЛЕКСІ */
+  justify-content: center; /* Зміщення блоків до центру */
+  align-items: flex-start;
+}
+.leftPanel{
+  display: flex;
+  min-height: 300px;
+  width: 20%;
+  background: #c4b5e1;
+}
+
+.leftPanel Form{
+  text-align: left;
+  padding: 10px;
+
+}
+
+.leftPanel Form button {
+  padding: 4px 10px;
+  margin: 5px auto;
+}
+
+.rightPanel{
+  display: flex;
+  min-height: 300px;
+  width: 80%;
+  background: #c7c7c7;
+}
+
+
+#login{
+  background: white;
+  text-align: center;
+  margin: 10px 40%;
+  padding: 5px;
+  border: 1px solid black;
+
+}
+
+
+
+
+@media screen and (min-width:1110px) and (max-width:1370px) {
+  body{
+      margin: 0 auto;
+  }
+  .content{
+    width: 60%;
+    min-width: 822px;
+    margin-right: 15px;
+  }
+  .logo{
+    width: 79%;
+    min-width: 1082px;
+  }
+  .menu{
+    min-width: 1082px;
+    width: 79%;
+  }
+  .sidebar{
+    min-width: 250px;
+  }
+}
+
+@media screen and (min-width:886px) and (max-width:1109px){
+  .content{
+    width: 56%;
+    min-width: 621px;
+    margin-right: 10px;
+  }
+  .logo{
+    width: 79%;
+    min-width: 876px;
+  }
+  .menu{
+    width: 79%;
+    min-width: 876px;
+  }
+  .sidebar{
+    min-width: 250px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:885px){
+  body{
+    margin: 0 auto;
+  }
+  .content{
+    width: 500px;
+    margin-right:10px;
+  }
+  .sidebar{
+    min-width:250px;
+  }
+  .logo{
+    width:760px;
+    height:80px;
+    font-size:2.7em;
+    padding: 7px 0;
+  }
+  .menu{
+    width: 760px;
+  }
+  .topmenu > li > a{
+    padding: 8px 20px;
+  }
+}
+@media screen and (min-width:426px) and (max-width:768px){
+  body{
+    margin: 0 auto;
+  }
+  .content{
+    width:440px;
+    margin-right:10px;
+  }
+  .logo{
+    width:700px;
+    height:80px;
+    font-size:2.5em;
+    padding: 10px 0;
+  }
+  .menu{
+    width: 700px;
+  }
+  .topmenu > li > a{
+    padding: 8px 10px;
+  }
+  .sidebar{
+    width:250px;
+  }
+}
+@media screen and (min-width:320px) and (max-width:425px){
+  body{
+    margin: 0 auto;
+  }
+ .logo{
+    height:70px;
+    font-size:2em;
+    padding: 10px;
+  }
+  .topmenu > li{
+    display: block;
+    width:100%;
+  }
+  .topmenu > li > a{
+    text-align: center;
+    min-width: 320px;
+    font-size:22px;
+    width:100%;
+  }
+  .row{
+    flex-direction:column;
+  }
+  .content{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .sidebar{
+    margin: 20px auto 0;
+    width:100%;
+  }
+}
