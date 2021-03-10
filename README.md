@@ -16,3 +16,11 @@ Technologies used:
 - HTML, CSS
 - PHP
 - MySQL
+
+Adminpanel 
+	- login: admin
+	- password: 123123
+
+Db
+	- login: fredy
+	- password: 12345
