@@ -24,3 +24,5 @@ Adminpanel
 Db
 	- login: fredy
 	- password: 12345
+link to the site: http://f997355e.beget.tech/	
+	
